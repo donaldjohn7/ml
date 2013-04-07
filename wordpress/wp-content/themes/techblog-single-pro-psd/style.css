@@ -348,6 +348,10 @@ section {
 	overflow:hidden;
 	margin-bottom:10px
 }
+#page_content_wrapper {
+	width: 1140px;
+	margin: 0 auto;
+}
 #content {
 	width:660px;
 	background:#fff;

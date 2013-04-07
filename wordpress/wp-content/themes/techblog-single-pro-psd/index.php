@@ -51,7 +51,8 @@
   </div>
 </div>
 </div>
-<?php } ?>    
+<?php } ?>
+  <div id="page_content_wrapper">    
   <div id="content">
   <div id="indextop">
     <?php if ( $paged < 2)      { ?>
@@ -152,4 +153,6 @@
 <center><?php echo get_option('ad3'); ?></center>
 <?php endif?>
 <?php include(TEMPLATEPATH . '/sidebar.php'); ?>  
+</div>
+
 <?php get_footer(); ?>
