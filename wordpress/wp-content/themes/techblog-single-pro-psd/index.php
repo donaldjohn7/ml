@@ -13,7 +13,11 @@
             <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> 
             <?php the_post_thumbnail( 'featured-thumb', 'title='.get_option('title').'' ); ?>
             </a>
-            <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+            <h2>
+              <div class="title">
+                <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+              </div>
+            </h2>
           </div>
           <?php $c++; endwhile; wp_reset_query(); ?>   
         </div>
@@ -21,7 +25,10 @@
       <a class="nextPage browse right"></a>
       <div id="theticker">
         <div id="m3ticker">
-          <div id="tickimg">   <img src="<?php bloginfo('template_directory'); ?>/images/latestnews.png" alt="Hot News" />    </div>
+          <div id="tickimg">   
+            <!-- <img src="<?php bloginfo('template_directory'); ?>/images/latestnews.png" alt="Hot News" />     -->
+            Latest Posts:
+          </div>
           <div id="ticker-area">
             <ul><?php magazine3_ticker(); ?></ul>
           </div>
