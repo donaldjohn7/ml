@@ -276,11 +276,13 @@ function magazine3_ticker( $no_posts = 5, $before = '   <li>', $after = '</li> '
 			$post_title = $post->post_title;
 			$permalink = get_permalink( $post->ID );
 			$output .= $before . '<a href="' . esc_url( $permalink ) . '" rel="bookmark" title="Permanent Link: ' . esc_attr( $post_title ) . '">' . esc_html( $post_title ) . '</a>';
-			if ( $show_excerpts ) {
+			//if ( $show_excerpts ) {
 				$post_excerpt = esc_html( $post->post_excerpt );
 				$output.= '<br />' . $post_excerpt;
-			}
-			$output .= $after; } 	} else {
+			//}
+			$output .= $after; 
+    }
+  } else {
 		$output .= $before . "None found" . $after;
 	}  echo $output;
 }

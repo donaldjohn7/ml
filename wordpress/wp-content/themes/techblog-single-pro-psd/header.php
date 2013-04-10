@@ -101,7 +101,8 @@ function rotateTicker(){
 	}                                                         
   	tickerText = tickerItems[i];
 	c = 0;
-	typetext();
+	//typetext();
+	$('#ticker-area').html("&nbsp;" + tickerText);
 	setTimeout( "rotateTicker()", 5000 );
 	i++;
 }                                                           

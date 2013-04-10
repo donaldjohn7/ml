@@ -137,8 +137,10 @@
       </div>
       <div class="entry"> 
         <?php
-          if( has_post_thumbnail() ) { ?>  <span id="blogthumb">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homethumb', 'title='.get_option('title').'' ); ?></a> </span>
+          if( has_post_thumbnail() ) { ?>  
+            <span id="blogthumb">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('homethumb', 'title='.get_option('title').'' ); ?></a> 
+            </span>
         <?php } else { ?>
         <?php } ?>
         <?php the_content_limit(390); ?>      
